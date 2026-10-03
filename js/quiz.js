@@ -303,7 +303,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	===================================================== */
 
 	function checkCourseQuizAvailability(courseCard) {
-		const socket = new WebSocket("ws://localhost:9000");
+		const socket = new WebSocket("ws://26.123.107.233:9000");
 
 		const markUnavailable = () => {
 			courseCard.dataset.quizAvailable = "unknown";
@@ -419,7 +419,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 		const socket = new WebSocket(
-			"ws://localhost:9000"
+			"ws://26.123.107.233:9000"
 		);
 
 
@@ -726,7 +726,14 @@ document.addEventListener("DOMContentLoaded", () => {
 				   </span>`;
 
 
-		step.options.forEach(option => {
+		const shuffledOptions = [...step.options];
+		for (let index = shuffledOptions.length - 1; index > 0; index--) {
+			const randomIndex = Math.floor(Math.random() * (index + 1));
+			[shuffledOptions[index], shuffledOptions[randomIndex]] =
+				[shuffledOptions[randomIndex], shuffledOptions[index]];
+		}
+
+		shuffledOptions.forEach(option => {
 
 			const optionButton =
 				document.createElement("button");

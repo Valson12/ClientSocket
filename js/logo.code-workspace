@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "logo",
+			"path": "../../WebSocket/mymadsocket/src/main/resources/static/logo"
+		},
+		{
+			"name": "Client MyMad",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Client MyMad"
+	}
+}
