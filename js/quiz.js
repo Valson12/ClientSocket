@@ -303,7 +303,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	===================================================== */
 
 	function checkCourseQuizAvailability(courseCard) {
-		const socket = new WebSocket("ws://26.123.107.233:9000");
+		const socket = new WebSocket("wss://26.123.107.233:9000");
 
 		const markUnavailable = () => {
 			courseCard.dataset.quizAvailable = "unknown";
@@ -419,7 +419,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 		const socket = new WebSocket(
-			"ws://26.123.107.233:9000"
+			"wss://26.123.107.233:9000"
 		);
 
 

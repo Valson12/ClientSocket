@@ -1,5 +1,5 @@
 function connectWebSocket(onCourses, onConnectionState) {
-	const socket = new WebSocket("ws://26.123.107.233:9000");
+	const socket = new WebSocket("wss://26.123.107.233:9000");
 
 	const updateConnectionState = state => {
 		if (typeof onConnectionState === "function") {
