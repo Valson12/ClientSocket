@@ -1,3 +1,13 @@
+:root {
+    --font-increase: 1px;
+}
+
+@media (max-width: 768px) {
+    :root {
+        --font-increase: 2px;
+    }
+}
+
 /* =====================================================
    RESET
 ===================================================== */
@@ -113,7 +123,7 @@ body {
 
     color: #777777;
 
-    font-size: 14px;
+    font-size: calc(14px + var(--font-increase));
     font-weight: 500;
 
     transition:
@@ -127,7 +137,7 @@ body {
 ===================================================== */
 
 .menu-item .material-symbols-rounded {
-    font-size: 22px;
+    font-size: calc(22px + var(--font-increase));
 
     margin-right: 13px;
 
@@ -315,7 +325,7 @@ body {
 
     font-family: inherit;
 
-    font-size: 11px;
+    font-size: max(12px, calc(11px + var(--font-increase)));
 
     color: #333333;
 }
@@ -370,7 +380,7 @@ body {
 
 
 .search-button .material-symbols-rounded {
-    font-size: 20px;
+    font-size: calc(20px + var(--font-increase));
 }
 
 
@@ -406,13 +416,13 @@ body {
 
     color: #6E5034;
 
-    font-size: 11px;
+    font-size: max(12px, calc(11px + var(--font-increase)));
     font-weight: 600;
 }
 
 
 .header-stat .material-symbols-rounded {
-    font-size: 14px;
+    font-size: calc(14px + var(--font-increase));
 }
 
 
@@ -439,7 +449,7 @@ body {
 
 
 .header-icon .material-symbols-rounded {
-    font-size: 19px;
+    font-size: calc(19px + var(--font-increase));
 }
 
 
@@ -504,7 +514,7 @@ body {
 .page-heading h1 {
     margin-bottom: 4px;
 
-    font-size: 24px;
+    font-size: calc(24px + var(--font-increase));
 
     line-height: 1.2;
 
@@ -515,7 +525,7 @@ body {
 
 
 .page-heading p {
-    font-size: 11px;
+    font-size: max(12px, calc(11px + var(--font-increase)));
 
     color: #777777;
 }
@@ -548,7 +558,7 @@ body {
 
 
 .card-header h2 {
-    font-size: 12px;
+    font-size: calc(12px + var(--font-increase));
 
     font-weight: 700;
 
@@ -559,7 +569,7 @@ body {
 .card-header p {
     margin-top: 4px;
 
-    font-size: 9px;
+    font-size: max(12px, calc(9px + var(--font-increase)));
 
     color: #777777;
 }
@@ -574,7 +584,7 @@ body {
 
     border-radius: 8px;
 
-    font-size: 8px;
+    font-size: max(12px, calc(8px + var(--font-increase)));
 
     font-weight: 600;
 
@@ -669,7 +679,7 @@ body {
 
 
 .progress-circle-inner strong {
-    font-size: 22px;
+    font-size: calc(22px + var(--font-increase));
 
     color: #18202f;
 }
@@ -725,7 +735,7 @@ body {
 
 
 .lesson-icon .material-symbols-rounded {
-    font-size: 16px;
+    font-size: calc(16px + var(--font-increase));
 }
 
 
@@ -751,7 +761,7 @@ body {
     white-space: nowrap;
     text-overflow: ellipsis;
 
-    font-size: 9px;
+    font-size: max(12px, calc(9px + var(--font-increase)));
 
     color: #26303e;
 }
@@ -762,7 +772,7 @@ body {
 
     margin-top: 2px;
 
-    font-size: 8px;
+    font-size: max(12px, calc(8px + var(--font-increase)));
 
     color: #929292;
 }
@@ -775,7 +785,7 @@ body {
 
     border-radius: 5px;
 
-    font-size: 7px;
+    font-size: max(12px, calc(7px + var(--font-increase)));
 }
 
 
@@ -829,7 +839,7 @@ body {
 
     margin-top: 4px;
 
-    font-size: 7px;
+    font-size: max(12px, calc(7px + var(--font-increase)));
 
     color: #929292;
 }
@@ -869,7 +879,7 @@ body {
 
     border-radius: 6px;
 
-    font-size: 7px;
+    font-size: max(12px, calc(7px + var(--font-increase)));
 
     color: #777777;
 }
@@ -918,7 +928,7 @@ body {
 
     color: #20B888;
 
-    font-size: 8px;
+    font-size: max(12px, calc(8px + var(--font-increase)));
 
     font-weight: 600;
 }
@@ -940,7 +950,7 @@ body {
 
     text-overflow: ellipsis;
 
-    font-size: 8px;
+    font-size: max(12px, calc(8px + var(--font-increase)));
 
     color: #303744;
 }
@@ -951,7 +961,7 @@ body {
 
     margin-top: 2px;
 
-    font-size: 7px;
+    font-size: max(12px, calc(7px + var(--font-increase)));
 
     color: #999999;
 }
@@ -968,7 +978,7 @@ body {
 
     color: #d7961c;
 
-    font-size: 7px;
+    font-size: max(12px, calc(7px + var(--font-increase)));
 }
 
 
@@ -1023,7 +1033,7 @@ body {
 
 
 .score-header strong {
-    font-size: 9px;
+    font-size: max(12px, calc(9px + var(--font-increase)));
 
     color: #303744;
 }
@@ -1032,7 +1042,7 @@ body {
 .score-header span {
     margin-top: 2px;
 
-    font-size: 7px;
+    font-size: max(12px, calc(7px + var(--font-increase)));
 
     color: #999999;
 }
@@ -1082,7 +1092,7 @@ body {
 
 
 .study-item > span {
-    font-size: 8px;
+    font-size: max(12px, calc(8px + var(--font-increase)));
 
     color: #777777;
 }
@@ -1091,7 +1101,7 @@ body {
 .study-item > strong {
     text-align: right;
 
-    font-size: 7px;
+    font-size: max(12px, calc(7px + var(--font-increase)));
 
     color: #555555;
 }
@@ -1170,12 +1180,12 @@ body {
 
 
 .reward-icon .material-symbols-rounded {
-    font-size: 17px;
+    font-size: calc(17px + var(--font-increase));
 }
 
 
 .reward-item strong {
-    font-size: 8px;
+    font-size: max(12px, calc(8px + var(--font-increase)));
 
     color: #303744;
 }
@@ -1184,7 +1194,7 @@ body {
 .reward-item > span {
     margin-top: 4px;
 
-    font-size: 7px;
+    font-size: max(12px, calc(7px + var(--font-increase)));
 
     line-height: 1.4;
 
@@ -1300,7 +1310,7 @@ body {
 
 
     .page-heading h1 {
-        font-size: 22px;
+        font-size: calc(22px + var(--font-increase));
         
     }
 }
@@ -1509,7 +1519,7 @@ body {
 
 
 .modal-close .material-symbols-rounded {
-    font-size: 18px;
+    font-size: calc(18px + var(--font-increase));
 }
 
 
@@ -1532,14 +1542,14 @@ body {
 
 
 .modal-icon .material-symbols-rounded {
-    font-size: 23px;
+    font-size: calc(23px + var(--font-increase));
 }
 
 
 .modal-title {
     margin-bottom: 8px;
 
-    font-size: 18px;
+    font-size: calc(18px + var(--font-increase));
 
     font-weight: 700;
 
@@ -1550,7 +1560,7 @@ body {
 .modal-description {
     margin-bottom: 22px;
 
-    font-size: 13px;
+    font-size: calc(13px + var(--font-increase));
 
     line-height: 1.6;
 
@@ -1573,7 +1583,7 @@ body {
 
     font-family: inherit;
 
-    font-size: 12px;
+    font-size: calc(12px + var(--font-increase));
 
     font-weight: 600;
 
@@ -1652,14 +1662,14 @@ body {
 
 
 .notification-header strong {
-    font-size: 12px;
+    font-size: calc(12px + var(--font-increase));
 
     color: #1d2433;
 }
 
 
 .notification-header span {
-    font-size: 9px;
+    font-size: max(12px, calc(9px + var(--font-increase)));
 
     color: #20B888;
 }
@@ -1701,7 +1711,7 @@ body {
 
     color: #20B888;
 
-    font-size: 17px;
+    font-size: calc(17px + var(--font-increase));
 }
 
 
@@ -1710,14 +1720,14 @@ body {
 
     margin-bottom: 3px;
 
-    font-size: 10px;
+    font-size: max(12px, calc(10px + var(--font-increase)));
 
     color: #303744;
 }
 
 
 .notification-item p {
-    font-size: 8px;
+    font-size: max(12px, calc(8px + var(--font-increase)));
 
     line-height: 1.4;
 
@@ -1808,7 +1818,7 @@ body {
 .profile-header strong {
     display: block;
 
-    font-size: 10px;
+    font-size: max(12px, calc(10px + var(--font-increase)));
 
     color: #303744;
 }
@@ -1819,7 +1829,7 @@ body {
 
     margin-top: 2px;
 
-    font-size: 8px;
+    font-size: max(12px, calc(8px + var(--font-increase)));
 
     color: #999999;
 }
@@ -1846,7 +1856,7 @@ body {
 
     font-family: inherit;
 
-    font-size: 10px;
+    font-size: max(12px, calc(10px + var(--font-increase)));
 
     text-align: left;
 
@@ -1866,7 +1876,7 @@ body {
 
 
 .profile-menu > button .material-symbols-rounded {
-    font-size: 17px;
+    font-size: calc(17px + var(--font-increase));
 }
 
 

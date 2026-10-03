@@ -1,3 +1,13 @@
+:root {
+    --font-increase: 1px;
+}
+
+@media (max-width: 768px) {
+    :root {
+        --font-increase: 2px;
+    }
+}
+
 /* =====================================================
    RESET
 ===================================================== */
@@ -99,7 +109,7 @@ body {
 
     color: #777777;
 
-    font-size: 14px;
+    font-size: calc(14px + var(--font-increase));
     font-weight: 500;
 
     transition:
@@ -113,7 +123,7 @@ body {
 ===================================================== */
 
 .menu-item .material-symbols-rounded {
-    font-size: 22px;
+    font-size: calc(22px + var(--font-increase));
     margin-right: 13px;
 
     font-variation-settings:
@@ -285,7 +295,7 @@ body {
     background: transparent;
 
     font-family: inherit;
-    font-size: 11px;
+    font-size: max(12px, calc(11px + var(--font-increase)));
 
     color: #333333;
 }
@@ -331,7 +341,7 @@ body {
 }
 
 .search-button .material-symbols-rounded {
-    font-size: 20px;
+    font-size: calc(20px + var(--font-increase));
 }
 
 
@@ -366,12 +376,12 @@ body {
 
     color: #6E5034;
 
-    font-size: 11px;
+    font-size: max(12px, calc(11px + var(--font-increase)));
     font-weight: 600;
 }
 
 .header-stat .material-symbols-rounded {
-    font-size: 14px;
+    font-size: calc(14px + var(--font-increase));
 }
 
 
@@ -397,7 +407,7 @@ body {
 }
 
 .header-icon .material-symbols-rounded {
-    font-size: 19px;
+    font-size: calc(19px + var(--font-increase));
 }
 
 
@@ -460,7 +470,7 @@ body {
 .page-heading h1 {
     margin-bottom: 4px;
 
-    font-size: 24px;
+    font-size: calc(24px + var(--font-increase));
     line-height: 1.2;
 
     font-weight: 800;
@@ -469,7 +479,7 @@ body {
 }
 
 .page-heading p {
-    font-size: 11px;
+    font-size: max(12px, calc(11px + var(--font-increase)));
     color: #777777;
 }
 
@@ -520,7 +530,7 @@ body {
 }
 
 .learning-progress-header h2 {
-    font-size: 14px;
+    font-size: calc(14px + var(--font-increase));
 
     font-weight: 700;
 
@@ -530,13 +540,13 @@ body {
 .learning-progress-header p {
     margin-top: 4px;
 
-    font-size: 10px;
+    font-size: max(12px, calc(10px + var(--font-increase)));
 
     color: #999999;
 }
 
 .learning-progress-header > strong {
-    font-size: 13px;
+    font-size: calc(13px + var(--font-increase));
 
     color: #20B888;
 }
@@ -578,7 +588,7 @@ body {
 }
 
 .section-title h2 {
-    font-size: 14px;
+    font-size: calc(14px + var(--font-increase));
     color: #303744;
 }
 
@@ -587,7 +597,7 @@ body {
 
     margin-top: 3px;
 
-    font-size: 9px;
+    font-size: max(12px, calc(9px + var(--font-increase)));
 
     color: #999999;
 }
@@ -628,7 +638,7 @@ body {
 
 .courses-loading .material-symbols-rounded {
     color: #20b888;
-    font-size: 24px;
+    font-size: calc(24px + var(--font-increase));
     animation: course-spinner 0.9s linear infinite;
 }
 
@@ -644,7 +654,7 @@ body {
 }
 
 .courses-loading p {
-    font-size: 11px;
+    font-size: max(12px, calc(11px + var(--font-increase)));
     font-weight: 600;
 }
 
@@ -662,7 +672,7 @@ body {
     border-radius: 8px;
     background: #6E5034;
     font: inherit;
-    font-size: 10px;
+    font-size: max(12px, calc(10px + var(--font-increase)));
     font-weight: 700;
     cursor: pointer;
     border-bottom-width: 4px;
@@ -691,7 +701,7 @@ body {
 
 .connection-retry .material-symbols-rounded {
     color: #ffffff;
-    font-size: 16px;
+    font-size: calc(16px + var(--font-increase));
     transition: transform 0.35s ease;
 }
 
@@ -810,7 +820,7 @@ body {
     white-space: nowrap;
     text-overflow: ellipsis;
 
-    font-size: 12px;
+    font-size: calc(12px + var(--font-increase));
 
     color: #303744;
 }
@@ -823,7 +833,7 @@ body {
     white-space: nowrap;
     text-overflow: ellipsis;
 
-    font-size: 9px;
+    font-size: max(12px, calc(9px + var(--font-increase)));
 
     color: #999999;
 }
@@ -845,7 +855,7 @@ body {
 
     border-radius: 6px;
 
-    font-size: 17px;
+    font-size: calc(17px + var(--font-increase));
 
     color: #20B888;
 
@@ -880,7 +890,7 @@ body {
 
     margin-top: 12px;
 
-    font-size: 9px;
+    font-size: max(12px, calc(9px + var(--font-increase)));
 
     color: #999999;
 }
@@ -937,7 +947,7 @@ body {
 
     margin-top: 7px;
 
-    font-size: 9px;
+    font-size: max(12px, calc(9px + var(--font-increase)));
 
     color: #20B888;
 }
@@ -1036,17 +1046,17 @@ body {
     align-items: center;
     gap: 6px;
     color: #168c6c;
-    font-size: 10px;
+    font-size: max(12px, calc(10px + var(--font-increase)));
     font-weight: 700;
 }
 
 .quiz-badge .material-symbols-rounded {
-    font-size: 17px;
+    font-size: calc(17px + var(--font-increase));
 }
 
 .quiz-step {
     color: #a2aab3;
-    font-size: 9px;
+    font-size: max(12px, calc(9px + var(--font-increase)));
     font-weight: 600;
 }
 
@@ -1083,7 +1093,7 @@ body {
 .quiz-credit {
     max-width: 100%;
     color: #68737d;
-    font-size: 7px;
+    font-size: max(12px, calc(7px + var(--font-increase)));
     line-height: 1.2;
     text-align: center;
 }
@@ -1091,13 +1101,13 @@ body {
 .quiz-title {
     margin-bottom: 5px;
     color: #26313d;
-    font-size: 22px;
+    font-size: calc(22px + var(--font-increase));
     overflow-wrap: anywhere;
 }
 
 .quiz-instruction {
     color: #8a939d;
-    font-size: 11px;
+    font-size: max(12px, calc(11px + var(--font-increase)));
 }
 
 .quiz-question-card {
@@ -1114,11 +1124,11 @@ body {
 
 .quiz-question-card > .material-symbols-rounded {
     color: #20b888;
-    font-size: 23px;
+    font-size: calc(23px + var(--font-increase));
 }
 
 .quiz-question {
-    font-size: 20px;
+    font-size: calc(20px + var(--font-increase));
     font-weight: 700;
 }
 
@@ -1199,7 +1209,7 @@ body {
     border: 1px solid #e4e8eb;
     border-radius: 9px;
     font: inherit;
-    font-size: 11px;
+    font-size: max(12px, calc(11px + var(--font-increase)));
     font-weight: 600;
     text-align: left;
     cursor: pointer;
@@ -1238,7 +1248,7 @@ body {
 .quiz-feedback {
     min-height: 18px;
     margin: 14px 0 10px;
-    font-size: 10px;
+    font-size: max(12px, calc(10px + var(--font-increase)));
     font-weight: 600;
 }
 
@@ -1256,7 +1266,7 @@ body {
     border: 1px solid rgba(32, 184, 136, 0.3);
     border-radius: 16px;
     box-shadow: 0 14px 40px rgba(25, 35, 45, 0.2);
-    font-size: 18px;
+    font-size: calc(18px + var(--font-increase));
     font-weight: 800;
     opacity: 0;
     pointer-events: none;
@@ -1296,7 +1306,7 @@ body {
     border: 0;
     border-radius: 9px;
     font: inherit;
-    font-size: 11px;
+    font-size: max(12px, calc(11px + var(--font-increase)));
     font-weight: 700;
     cursor: pointer;
 }
@@ -1367,7 +1377,7 @@ body {
 }
 
 .extra-icon .material-symbols-rounded {
-    font-size: 18px;
+    font-size: calc(18px + var(--font-increase));
 }
 
 
@@ -1380,14 +1390,14 @@ body {
 }
 
 .extra-info h3 {
-    font-size: 12px;
+    font-size: calc(12px + var(--font-increase));
     color: #303744;
 }
 
 .extra-info p {
     margin-top: 4px;
 
-    font-size: 9px;
+    font-size: max(12px, calc(9px + var(--font-increase)));
 
     line-height: 1.4;
 
@@ -1403,13 +1413,13 @@ body {
 
     margin-top: 7px;
 
-    font-size: 9px;
+    font-size: max(12px, calc(9px + var(--font-increase)));
 
     color: #6E5034;
 }
 
 .extra-info strong .material-symbols-rounded {
-    font-size: 14px;
+    font-size: calc(14px + var(--font-increase));
 }
 
 
@@ -1478,7 +1488,7 @@ body {
     }
 
     .page-heading h1 {
-        font-size: 233px;
+        font-size: clamp(24px, 4vw, 32px);
         font-weight: 900;
     }
 
@@ -1495,7 +1505,7 @@ body {
         gap: 10px;
         max-width: calc(100vw - 32px);
         padding: 10px 16px 10px 10px;
-        font-size: 16px;
+        font-size: calc(16px + var(--font-increase));
     }
 
     .quiz-result-toast img {
@@ -1509,7 +1519,7 @@ body {
     }
 
     .quiz-title {
-        font-size: 19px;
+        font-size: calc(19px + var(--font-increase));
     }
 
     .quiz-intro {
@@ -1529,7 +1539,7 @@ body {
     }
 
     .quiz-credit {
-        font-size: 6px;
+        font-size: max(12px, calc(6px + var(--font-increase)));
     }
 
     .quiz-question-card {
@@ -1538,7 +1548,7 @@ body {
     }
 
     .quiz-question {
-        font-size: 17px;
+        font-size: calc(17px + var(--font-increase));
     }
 
     .quiz-option,
@@ -1610,14 +1620,14 @@ body {
 
 
 .notification-header strong {
-    font-size: 12px;
+    font-size: calc(12px + var(--font-increase));
 
     color: #1d2433;
 }
 
 
 .notification-header span {
-    font-size: 9px;
+    font-size: max(12px, calc(9px + var(--font-increase)));
 
     color: #20B888;
 }
@@ -1659,7 +1669,7 @@ body {
 
     color: #20B888;
 
-    font-size: 17px;
+    font-size: calc(17px + var(--font-increase));
 }
 
 
@@ -1668,14 +1678,14 @@ body {
 
     margin-bottom: 3px;
 
-    font-size: 10px;
+    font-size: max(12px, calc(10px + var(--font-increase)));
 
     color: #303744;
 }
 
 
 .notification-item p {
-    font-size: 8px;
+    font-size: max(12px, calc(8px + var(--font-increase)));
 
     line-height: 1.4;
 
@@ -1764,7 +1774,7 @@ body {
 .profile-header strong {
     display: block;
 
-    font-size: 10px;
+    font-size: max(12px, calc(10px + var(--font-increase)));
 
     color: #303744;
 }
@@ -1775,7 +1785,7 @@ body {
 
     margin-top: 2px;
 
-    font-size: 8px;
+    font-size: max(12px, calc(8px + var(--font-increase)));
 
     color: #999999;
 }
@@ -1802,7 +1812,7 @@ body {
 
     font-family: inherit;
 
-    font-size: 10px;
+    font-size: max(12px, calc(10px + var(--font-increase)));
 
     text-align: left;
 
@@ -1822,7 +1832,7 @@ body {
 
 
 .profile-menu > button .material-symbols-rounded {
-    font-size: 17px;
+    font-size: calc(17px + var(--font-increase));
 }
 
 
@@ -1859,7 +1869,7 @@ body {
     }
 
     .page-heading h1 {
-        font-size: 20px;
+        font-size: calc(20px + var(--font-increase));
     }
 
     .learning-progress {
